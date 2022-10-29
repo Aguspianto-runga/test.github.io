@@ -1,0 +1,112 @@
+.container {
+  height: 400px;
+  width: 80%;
+  margin: auto;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+nav h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(167, 14, 14);
+}
+.logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  list-style: none;
+  grid-gap: 10px;
+  margin-right: 10px;
+}
+.menu ul li {
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.tombol:hover {
+  color: tomato;
+  font-size: 19px;
+}
+.jumbotron {
+  display: grid;
+  grid-template-areas:
+    "gambar1 gambar1 gambar2"
+    "gambar1 gambar1 gambar3";
+  grid-gap: 10px;
+}
+.gambar1 {
+  display: grid;
+  grid-area: gambar1;
+  height: 400px;
+  background-image: url(uki-1.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px black;
+}
+.gambar2 {
+  display: grid;
+  grid-area: gambar2;
+  background-image: url(Kampus2.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px black;
+}
+.gambar3 {
+  display: grid;
+  grid-area: gambar3;
+  background-image: url(Kampus3.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px black;
+}
+.jumbotron h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+.info img {
+  width: 100%;
+}
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+.gallery div {
+  box-shadow: 3px 3px 3px black;
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+}
+footer {
+  background-color: rgb(126, 126, 126);
+  margin: 10px;
+  padding: 10px;
+}
